@@ -27,6 +27,9 @@ const Navbar = () => (
       <div/>
       <a href="/" className='p__opensans'> Book Table </a>
     </div>
+    <div className='app__navbar-smallscreen'>
+      <GiHamburgerMenu color= "#FFF " fontSize={27} onClick={() => {}} />
+    </div>
   </div>
 );
 

@@ -43,7 +43,26 @@
 
 /* Styling for the login div*/
 .app__navbar-login {
-  display: flex;
-  justify-content: flex-end;
+  display: flex; /* Lays out the login content in a row from left to right */
+  justify-content: flex-end; /* Pushes all login content to the very end of flexbox row */
   align-items: center;
+}
+
+/* Target the anchor tags inside the login div*/
+.app__navbar-login a{
+    margin: 0 1rem; /*Add 1rem left & right spacing for each anchor tag*/
+    text-decoration: none;
+    transition: 0.5s ease; /*specifies a transition effect with a slow start, then fast, then end slowly*/
+}
+
+/*Add hover effect for anchor tag*/
+.app__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden); /* Adds border line at bottom of each anchor tag when hovered over*/
+}
+
+/*Targets the empty div between Login/Register & Book Table*/
+.app__navbar-login div {
+    width: 1px; /*Very thin line*/
+    height: 30px; /*Very tall line*/
+    background-color: var(--color-grey); /*Makes the empty div a grey vertical line */
 }
