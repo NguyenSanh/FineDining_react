@@ -1,0 +1,49 @@
+/* Styling for the parent div for Navbar */
+.app__navbar {
+  width: 100%;
+  display: flex; /* flexbox is row by default*/
+  justify-content: space-between; /* Adds space on the x-axis between the two items in div: the app logo and the links */
+  align-items: center; /* Centers the div items vertically*/
+  background: var(--color-black); /* Sets background of the navabr to black*/
+
+  padding: 1rem 2rem;
+}
+
+/* Styling for child div containing the app logo*/
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Target img element within the div */
+.app__navbar-logo img {
+  width: 150px; /* app logo image is 150px*/
+}
+
+/* Styling Unordered List (<ul>) containing menu links*/
+.app__navbar-links {
+  flex: 1; /* Menu takes most of the space in the div*/
+  display: flex; /* Puts the menu links in a flexbox row */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content horizontally */
+  list-style: none; /* Removes any bullet points */
+}
+
+/* Targets each individual list item (<li>) in the unordered list */
+.app__navbar-links li {
+  margin: 0 1rem; /* Adds 1rem space on left & right of each list item*/
+  cursor: pointer;
+}
+
+/* Add hover effect to each list item */
+.app__navbar-links li:hover {
+  color: var(--color-grey); /* List item turns grey when mouse hovers over it */
+}
+
+/* Styling for the login div*/
+.app__navbar-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

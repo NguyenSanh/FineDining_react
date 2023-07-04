@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
+/* Set up variables for the fonts and colors that we will commonly use */
 :root {
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
@@ -12,6 +13,7 @@
   --color-white: #FFFFFF;
 }
 
+/* Reset all padding & margin for all elements to be 0*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -29,6 +31,7 @@ a {
 	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+/* Some animations added for us by YouTuber */
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);

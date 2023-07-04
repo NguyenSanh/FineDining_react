@@ -1,5 +1,6 @@
 import React from "react";
 
+/* Import all the containers from container folder */
 import {
   AboutUs,
   Chef,
@@ -12,6 +13,7 @@ import {
   SpecialMenu,
 } from "./container";
 import { Navbar } from "./components";
+
 import "./App.css";
 
 const App = () => (
