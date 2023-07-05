@@ -66,3 +66,26 @@
     height: 30px; /*Very tall line*/
     background-color: var(--color-grey); /*Makes the empty div a grey vertical line */
 }
+
+/* Navigation Menu for small screen devices */
+.app__navbar-smallscreen {
+    display: none; /* We will reopen the display only for small screen devices */
+}
+
+/* Targets the overlay div that covers the entire screen for smaller devices */
+.app__navbar-smallscrenn_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 100vh; /* Sets overlay to be entire height of device screen*/
+    background: var(--color-black); /* The overlay menu will be black */
+    transition: 0.5s ease; /*Overlay will smoothly slide into view over 0.5 seconds interval*/
+
+    flex-direction: column; /*The actual menu links on small screens will be vertical*/
+    z-index: 5; /* High z-index means overlay will appear over the entire page */
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+    
+}
