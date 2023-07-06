@@ -73,11 +73,11 @@
 }
 
 /* Targets the overlay div that covers the entire screen for smaller devices */
-.app__navbar-smallscrenn_overlay {
+.app__navbar-smallscreen_overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 1%;
+    width: 100%;
     height: 100vh; /* Sets overlay to be entire height of device screen*/
     background: var(--color-black); /* The overlay menu will be black */
     transition: 0.5s ease; /*Overlay will smoothly slide into view over 0.5 seconds interval*/
@@ -87,5 +87,71 @@
 }
 
 .app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 30px;
+    color: var(--color-golden);
+    cursor: pointer;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Styling for the div containing the menu links for smallscreen*/
+.app__navbar-smallscreen_links {
+    list-style: none; 
+}
+
+/*Target each individual list item in smallscreen menu */
+.app__navbar-smallscreen_links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+/* Add hover effect for list items in smnallscreen menu*/
+.app__navbar-smallscreen_links li:hover {
+    color: var(--color-white); /* When hovering over list items, they turn white*/
+}
+
+
+@media screen and (max-width: 2000px) {
+    /*Target the logo image*/
+    .app__navbar-logo img {
+        width: 210px;
+    }
+}
+
+/*When device width is 1150px, hamburger menu will appear*/
+@media screen and (max-width: 1150px) {
+    /* Hide the div container for the main navigation bar*/
+    .app__navbar-links {
+        display: none; /* Hide the main navigation bar when screen is small enough */
+    }
     
+    /* Show the div container for the smallscreen navigation bar*/
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+
+    /*Target the div with the Login/Register */
+    .app__navbar-login {
+        display: none; /*Hide it because not enought space on smaller screens*/
+    }
+    
+    /*Target the logo image*/
+    .app__navbar-logo img {
+        width: 110px; /*Make it smaller*/
+    }
+
+    .app__navbar-smallscreen_links li {
+        font-size: 30px; /*Increase text size for smallscreen menu*/
+    }
 }
