@@ -1,0 +1,95 @@
+.app__aboutus {
+    position: relative;
+}
+
+.app__aboutus-overlay {
+    position: absolute;
+    /*inset: 0;*/
+}
+
+/*Styling for G Image */
+.app__aboutus-overlay img {
+    width: 391px;
+    height: 415px;
+    z-index: 0;
+}
+
+.app__aboutus-content {
+    width: 100%;
+    z-index: 2;
+}
+
+/* Styling for About Us Section (Left of Knife Image) */
+.app__aboutus-content_about {
+    flex: 1;
+    display: flex; /* Creates a flexbox of horizontal direction for all About Us Content*/
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: right; /* Aligns all text to the right of div*/
+}
+
+/* Styling for the div containing the knife image*/
+.app__aboutus-content_knife {
+    /* Reminder: padding is inner space, margin is outer space*/
+    margin: 2rem 4rem; /* Add 2rem spacing on left & right of knife image*/
+}
+
+/* Styling for knife image element*/
+.app__aboutus-content_knife img {
+    height: 910px; /* Controls sizing of knife image*/
+}
+
+/* Styling for Our History Section (Right of Knife Image) */
+.app__aboutus-content_history {
+    flex: 1;
+    display: flex; /* Creates a flexbox of horizontal direction for all About Us Content*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    text-align: left; /* Aligns all text to the left of div*/
+}
+
+/* Styling for p elements in the About Us & History divs*/
+.app__aboutus-content_about p, 
+.app__aboutus-content_history p {
+    margin: 2rem 0; /* 2rem spacing on top/bottom of paragraph text */
+    color: var(--color-grey); /* paragraph text is now grey*/
+}
+
+@media screen and (max-width: 2000px) {
+    /* Styling for knife image element*/
+    .app__aboutus-content_knife img {
+        height: 1110px; /* Make knife height bigger */
+    }
+
+    /* Styling for p elements in 'About Us' & 'History' divs*/
+    .app__aboutus-content_about p, 
+    .app__aboutus-content_history p {
+        margin: 4rem 0; /* Change to 4rem spacing on top/bottom */
+    }
+    
+}
+
+/* Adjustments for Tablets */
+@media screen and (max-width: 900px) {
+    .app__aboutus-content {
+        flex-direction: column; /*Set the entire About Us section to be vertical*/
+    }
+
+    .app__aboutus-content_knife {
+        margin: 4rem 0; /* More spacinf top/bottom of knife img */
+    }
+}
+
+/* Adjustments for Mobile Phones (iPhone XR) */
+@media screen and (max-width: 650px) {
+    /* Styling for letter 'G' image directly */
+    .app__aboutus-overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}
+
