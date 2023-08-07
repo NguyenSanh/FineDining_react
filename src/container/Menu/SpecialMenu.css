@@ -1,0 +1,20 @@
+/* Styling for the main parent div cotnainer for SpecialMenu*/
+.app__specialMenu {
+    flex-direction: column; /*Set all content under parent div to be vertical*/
+    background: var(--color-black); /* Set entire background to black*/
+}
+/* Styling for div containing SpecialMenu title*/
+.app__specialMenu-title {
+    margin-bottom: 2rem;
+    text-align: center; /* Aligns all text in title div to be centered*/
+}
+/* Styling for div holding Wine, Image, Cocktails*/
+.app__specialMenu-menu {
+    width: 100%;
+
+    margin: 2rem 0;
+    display: flex; /* Sets div direction from left to right */
+    justify-content: center; /* Centers content on horixontal axis */
+    align-items: flex-start; /* APushes content to the top (start of vertical axis) */
+    flex-direction: row; /* Even though its row by default, we'll have to set it to column on mobile devices later*/
+}

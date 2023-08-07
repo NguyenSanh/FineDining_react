@@ -1,5 +1,6 @@
 import images from './images';
 
+/* This wine data is imported/used in the SpecialMenu container via map() function*/
 const wines = [
   {
     title: 'Chapel Hill Shiraz',

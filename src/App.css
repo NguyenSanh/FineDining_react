@@ -52,6 +52,7 @@
   width: 80%;
 }
 
+/* Preset styling class for the website's buttons */
 .custom__button {
   background-color: var(--color-crimson);
     color: var(--color-black);
