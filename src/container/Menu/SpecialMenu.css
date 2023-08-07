@@ -3,18 +3,102 @@
     flex-direction: column; /*Set all content under parent div to be vertical*/
     background: var(--color-black); /* Set entire background to black*/
 }
+
 /* Styling for div containing SpecialMenu title*/
 .app__specialMenu-title {
     margin-bottom: 2rem;
     text-align: center; /* Aligns all text in title div to be centered*/
 }
-/* Styling for div holding Wine, Image, Cocktails*/
+
+/* Styling for parent div holding Wine, Image, Cocktails*/
 .app__specialMenu-menu {
     width: 100%;
-
     margin: 2rem 0;
+
     display: flex; /* Sets div direction from left to right */
     justify-content: center; /* Centers content on horixontal axis */
     align-items: flex-start; /* APushes content to the top (start of vertical axis) */
     flex-direction: row; /* Even though its row by default, we'll have to set it to column on mobile devices later*/
 }
+
+/* Styling for Div Containing Heading Text for Both Menus */
+.app__specialMenu-menu_heading {
+    font-family: var(--font-base); /* Sets font type*/
+    font-weight: 600; /*Sets font boldness */
+    font-size: 45px; /*Sets font sizing */
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+
+/* Styling for Divs Containing Menu Heading and Item List*/
+.app__specialMenu-menu_wine, 
+.app__specialMenu-menu_cocktails {
+    flex: 1;
+    width: 100%; 
+    flex-direction: column; /* Creates a vertical direction where heading lies above the list */
+}
+
+/* Target the Div containing the bottle image */
+.app__specialMenu-menu_img {
+    width: 410px; /* Set Div width to be only 410px wide */
+    margin: 0 2rem; /* Add spacing on both ends of the Div containing the img*/
+}
+
+/* Now, target the actual image element in the Div*/
+.app__specialMenu-menu_img img {
+    width: 100%; /* Bottle image takes up 100% of that 410px-wide Div container */
+    height: auto;
+}
+
+/* Target the Divs Containing the MenuItems */
+.app__specialMenu_menu_items {
+    display: flexl;
+    flex-direction: column;
+    margin: 2rem 0; /* Adds spacing between the title above it and the list itself*/
+    width: 100%;
+}
+
+/* For all devices 2000px wide and under */
+@media screen and (min-width: 2000px) {
+    .app__specialMenu-menu_img {
+        width: 650px;
+    }
+
+    .app__specialMenu-menu_img img{
+        height: 920px;
+    }
+    
+}
+
+/* For all devices 1150px wide and under */
+@media screen and (max-width: 1150px) {
+    /* Target the parent Div Holding Menu, Image, Menu trio */
+    .app__specialMenu-menu {
+        flex-direction: column;
+        align-items: center; /*Align items across the horizotal axis (cross-axis in this case)*/
+        width: 100%;
+    }
+
+    /* Target the Bottle Image */
+    .app__specialMenu-menu_img {
+         /* For all devices 1150px width and under: the bottle image will have 3rem spacing above/below it*/
+        margin: 3rem 0;
+    }
+}
+
+/* For devices only 650px wide and under */
+@media screen and (max-width: 650px) {
+    .app__specialMenu-menu_img {
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_heading {
+        font-size: 35px; /* Change heading size only for smaller devices */
+        line-height: 48.5px;
+    }
+}
+
+
+
+

@@ -1,7 +1,7 @@
 /* Styling for Each Individual MenuItem Component */
 .app__menuitem {
     width: 100%;
-    margin: 1rem 0rem; /* So, this adds 1rem spacing between each MenuItem in the list */
+    margin: 1rem 0; /* So, this adds 1rem spacing between each MenuItem in the list */
 
     display: flex; 
     flex-direction: column; /* Each MenuItem is set to column display*/
@@ -14,7 +14,29 @@
     align-items: center;
 }
 
+/* Styling for the subtext for each MenuItem component*/
 .app__menuitem-sub {
     width: 100%;
     margin-top: 0.2rem; /* Adds spacing above sub-text (AU | Bottle) */
+}
+
+/* Styling for div holding name of menuitem*/
+.app__menuitem-name {
+    flex: 1;
+}
+
+/* Dash line in each menuitem component  */
+.app__menuitem-dash {
+    width: 200px; /* Sets dash line to be 200px wide */
+    height: 1px; /* The dash line is thin */
+    background: var(--color-golden); /* Makes the dash line a gold color */
+    margin: 0 1rem; /*Adds 1rem spacing on both ends of the dash line*/   
+}
+
+/* Styling for div holding price of menuitem*/
+.app__menuitem-price {
+    display: flex; /* Creates a horizontal direction */
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
