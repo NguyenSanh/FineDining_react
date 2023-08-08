@@ -4,7 +4,7 @@ import React from 'react';
 import {images, data } from '../../constants';
 
 /* Import some components */
-import { SubHeading, Menuitem, MenuItem } from '../../components';
+import { SubHeading, MenuItem } from '../../components';
 
 import './SpecialMenu.css';
 
