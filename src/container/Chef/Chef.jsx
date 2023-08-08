@@ -14,6 +14,25 @@ const Chef = () => (
     <div className="app__wrapper_info">
       <SubHeading title="Chef's Word" />
       <h1 className="headtext__cormorant">What we eating?</h1>
+
+      <div className="app__chef-content">
+        <div className="app__chef-content_quote">
+          <img src={images.quote} alt="quote image" />
+          <p className="p__opensans">
+            We are going to eat a Maruchan Cup of Noodles topped with a cup of Sririacha sauce.
+          </p>
+        </div>
+        <p className="p__opensans">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatem nostrum sapiente! Voluptatem consequuntur distinctio ea quae commodi nihil, id fugit maiores praesentium cupiditate nisi nulla minima consectetur ratione ipsa!
+        </p>
+      </div>
+
+      <div className="app__chef-sign">
+        <p>jonathan nguyen</p>
+        <p className="p__opensans">Chef & Founder</p>
+        <img src={images.sign} alt="signature image" />
+      </div>
+
     </div>
   </div>
 );

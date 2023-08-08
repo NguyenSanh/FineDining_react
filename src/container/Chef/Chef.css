@@ -1,0 +1,59 @@
+.app__chef-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+/* Styling for div holding the quote and " image*/
+.app__chef-content_quote {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/* Styling for the quote image */
+.app__chef-content_quote img {
+    width: 47px;
+    height: 40px;
+    margin: 0 1rem 1rem 0; /*spacing for top, right, bottom, left*/
+}
+
+/* Styling for Div holding the bottom signature*/
+.app__chef-sign {
+    width: 100%; /*Set the Div to be 100% of its parent Div's width*/
+    margin-top: 3rem;
+}
+
+/* Target the 1st <p> element in this Div */
+.app__chef-sign p:first-child {
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 32;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize; /* Sets the first letter of each word to be capitalized */
+    color: var(--color-golden);
+}
+
+/* Target the signature image within the Div holding it*/
+.app__chef-sign img {
+    width: 250px;
+    margin-top: 3rem;
+}
+
+
+@media screen and (max-width: 2000px) {
+    /*Increase image width*/
+    .app__chef-sign img {
+        width: 370px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    /*Change image width to always be 80% of mobile screens*/
+    .app__chef-sign img {
+        width: 80%;
+    }
+}
