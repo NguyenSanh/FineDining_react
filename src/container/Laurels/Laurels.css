@@ -1,8 +1,8 @@
 /* Styling for Div that contains awards under header text*/
 .app__laurels_awards {
-    display: flex; /*Default direction: row*/
-    justify-content: flex-start; /* Aligns content horizontally to the left (main-axis) */
-    align-items: center; /*Aligsn content to be centered vertically (cross-axis)*/
+  display: flex; /*Default direction: row*/
+  justify-content: flex-start; /* Aligns content horizontally to the left (main-axis) */
+  align-items: center; /*Aligsn content to be centered vertically (cross-axis)*/
 
-    margin-top: 3rem; /* 3rem spacing above awards */
+  margin-top: 3rem; /* 3rem spacing above awards */
 }
